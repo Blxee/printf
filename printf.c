@@ -14,6 +14,9 @@ int _printf(const char *format, ...)
 	va_list lst;
 	int i, chars_printed, total_chars_printed;
 
+	if (format == NULL)
+		return (-1);
+
 	va_start(lst, format);
 
 	total_chars_printed = 0;
