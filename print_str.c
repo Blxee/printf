@@ -14,7 +14,8 @@ int print_str(char *str)
 	int i, total_chars_printed, chars_printed;
 
 	if (str == NULL)
-		return (-1);
+		str = "(null)";
+
 	total_chars_printed = 0;
 	for (i = 0; str[i]; i++)
 	{
