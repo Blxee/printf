@@ -34,11 +34,6 @@ int _printf(const char *format, ...)
 			chars_printed = print_fmt(format[i + 1], lst);
 			i += 2; /* +2 to skip '%' and the format char */
 		}
-		if (chars_printed == -1) /* if print_fmt failed */
-		{
-			va_end(lst);
-			return (-1);
-		}
 		total_chars_printed += chars_printed;
 	}
 

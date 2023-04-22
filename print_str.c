@@ -20,8 +20,6 @@ int print_str(char *str)
 	for (i = 0; str[i]; i++)
 	{
 		chars_printed = _putchar(str[i]);
-		if (chars_printed == -1)
-			return (-1);
 		total_chars_printed += chars_printed;
 	}
 	return (total_chars_printed);
