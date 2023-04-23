@@ -1,10 +1,12 @@
 #include "main.h"
 
 /**
- * get_flags - Calculates active flags
- * @format: Formatted string in which to print the arguments
+ * get_flags - retrieves length of flags in format specifier
+ *
+ * @format: format identifier
  * @i: take a parameter.
- * Return: Flags:
+ *
+ * Return: amount of flags
  */
 int get_flags(const char *format, int *i)
 {
